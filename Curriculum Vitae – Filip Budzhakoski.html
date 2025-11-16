@@ -23,8 +23,8 @@
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      display: grid;
-      grid-template-rows: auto auto auto auto auto auto auto;
+      display: flex;
+      flex-direction: column;
       gap: 15px;
       overflow: hidden;
     }
@@ -44,6 +44,7 @@
       border-radius: 50%;
       margin-bottom: 10px;
       border: 3px solid #fff;
+      object-fit: cover; /* keeps aspect ratio inside circle */
     }
     h2 {
       margin-bottom: 10px;
@@ -65,17 +66,14 @@
       padding: 10px;
       border-radius: 6px;
     }
-    .icon {
-      margin-right: 8px;
-    }
   </style>
 </head>
 <body>
 
 <div class="container">
   <header>
-    <!-- Profile photo placeholder -->
-    <img src="C:\Users\fbudz\Desktop\HTML\FilipBudzhakoski-FilipBudzhakoski\Profile Picture.jpg" alt="Profile Photo">
+   
+    <img src="profile.jpg" alt="Profile Photo">
     <h1>Filip Budzhakoski</h1>
     <p>Aspiring Fullstack Developer | Strängnäs, Sweden</p>
     <p>📱 076 013 0033 | ✉️ fbudzakoski@hotmail.com</p>
